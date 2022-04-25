@@ -8,12 +8,10 @@ public class UrlEntity {
     @Id
     private String internalUrl;
     private String externalUrl;
-    private String deleteWord;
 
     
-    public UrlEntity(String internalUrl, String externalUrl, String deleteWord) {
+    public UrlEntity(String internalUrl, String externalUrl) {
         this.internalUrl = internalUrl;
         this.externalUrl = externalUrl;
-        this.deleteWord = deleteWord;
     }
 }
