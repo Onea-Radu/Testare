@@ -23,7 +23,7 @@ public class LinkApplication {
     @PostConstruct
     public void runAfterObjectCreated() {
         urlRepository.deleteAll();
-        urlRepository.save(new UrlEntity("internal", "https://www.google.com", null));
+        urlRepository.save(new UrlEntity("internal", "https://www.google.com"));
     }
 
 }
