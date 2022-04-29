@@ -22,7 +22,7 @@ public class UrlService {
         var redirectedUrl = urlRepository.findById(url)
                 .map(entity -> "redirect:" + entity.getExternalUrl());
         if (redirectedUrl.isEmpty()) {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Url not found");
+            throw new  ResponseStatusException(HttpStatus.NOT_FOUND, "Url not found");
         }
         return redirectedUrl.get();
     }
