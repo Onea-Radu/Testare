@@ -9,4 +9,7 @@ public class EncodeRequest {
     public EncodeRequest(String url) {
         this.url = url;
     }
+
+    public EncodeRequest() {
+    }
 }
